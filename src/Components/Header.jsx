@@ -9,7 +9,7 @@ function Header() {
                 <Link to="/shop">Shop</Link>
             </div>
             <div id="header-cart">
-                <Link to="/cart">Cart</Link>
+                <Link to="/cart"><img id="cart" src="https://images.squarespace-cdn.com/content/v1/636e78e3cd34c14c80c19449/1672690102008-BDCYMNGT947Z3O5OWSXH/shop-bag.png" alt="shopping cart"></img></Link>
             </div>
         </div>
     )
