@@ -11,7 +11,7 @@ body {
   color: black;
 }
 
-a:hover {
+#header-links > a:hover {
   text-decoration: underline;
 }
 
@@ -42,11 +42,25 @@ a:hover {
 
 #cart {
   max-height: 30px;
+  margin-right: 1em;
+}
+
+#total-items-indicator {
+  font-size: 1.25rem;
+  font-weight:700;
+  text-decoration: none;
 }
 
 #header-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 15%;
-  padding: 1em;
+  margin: 0 auto;
+}
+
+#header-cart:hover {
+  text-decoration: underline;
 }
 
 #home-container {
@@ -79,7 +93,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  outline: 1px solid black;
+  border: 1px solid black;
   background-color: lightcyan;
 }
 
@@ -128,41 +142,161 @@ a:hover {
   text-align: center;
 }
 
-#cart-title {
+#empty-cart-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 11.5em auto 11.5em;
+  border: 1px solid black;
+}
+
+#empty-cart-title {
   font-size: 2rem;
+  font-weight: 700;
+  padding: 1em 0 1em;
+  text-align: center;
+}
+
+#empty-cart-body {
+  text-align: center;
+  margin: 5em auto;
+  font-size: 1.5em;
+}
+
+#free-shipping-reminder {
+  max-width: 1200px;
+  margin: 2em auto 0;
+  padding: 0.5em 0;
+  text-align: center;
+  background-color: lightblue;
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+#non-empty-cart-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 2em auto 5em;
+  border: 1px solid black;
+}
+
+#cart-left {
+  width: 65%;
+}
+
+#cart-right {
+  width: 35%;
+  border-left: 1px solid black;
+}
+
+#summary-title {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1em 0 1em;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+#summary-body {
+  display: flex;
+  margin: 2em 3em;
+}
+
+#summary-body-left, #summary-body-right {
+  width: 50%;
+}
+
+#summary-body-right {
+  text-align: right;
+}
+
+#summary-body-left > div, #summary-body-right > div {
+  margin-bottom: 1em;
+}
+
+#summary-body-left > div {
   font-weight: 700;
 }
 
-#cart-container {
-  max-width: 1200px;
-  margin: 3em auto 3em;
-  outline: 1px solid black;
+#cart-title {
+  font-size: 2rem;
+  font-weight: 700; 
+  padding: 1em 0 1em;
+  text-align: center;
 }
 
 .cart-content {
   display: flex;
-  width: 50%;
-  outline: 1px solid black;
   height: 150px;
+  border-top: 1px solid black;
+  padding: 0.5em 0;
 }
 
-.cart-pics {
-  padding: 1em 2em 1em;
+.cart-content-left {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 1em;
 }
+
 
 .cart-item-name {
   font-weight: 700;
   font-size: 1.25em;
 }
 
-.cart-right {
+.cart-item-price {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.cart-middle {
   display: flex;
   flex-direction: column;
-  text-align: left;
+
   margin: auto 0 auto 3em;
 }
 
+.cart-middle > div {
+  margin: .25em 0;
+}
 
+
+.cart-item-quantity {
+  font-size: 1.125em;
+  font-weight: bold;  
+}
+
+.cart-minus-button {
+  margin-right: 2em;
+}
+
+.cart-minus-button, .cart-plus-button {
+  font-size: 1.125em;
+  font-weight: 700;
+  background-color: transparent;
+  border: 1px solid black;
+  width: 25px;
+  height: 25px;
+}
+
+
+.cart-minus-button:hover {
+  cursor: pointer;
+  background-color: rgb(252, 206, 206);
+}
+
+.cart-plus-button:hover {
+  cursor: pointer;
+  background-color: rgb(198, 245, 198);
+}
+
+
+.cart-item-total {
+  margin: auto 2em auto auto;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
 
 .empty-cart > #cart-body {
   font-size: 1.5rem;
@@ -173,8 +307,23 @@ a:hover {
   margin: auto 0 auto;
 }
 
-#sample {
-  display: flex;
+.order-total {
+  margin-top: 3em;
+  padding-top: 3em;
+  border-top: 1px solid gray;
+  color: rgb(192, 0, 0);
+}
+
+#place-order {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+#place-order > button {
+  background-color: orange;
+  padding: 1em 3em;
+  border-radius: 3em;
+  font-size: 1.25rem;
 }
 
 #footer-container {
@@ -194,4 +343,31 @@ a:hover {
 
 #address, #phone {
   margin-bottom: 0.5em;
+}
+
+@media (max-width: 761px) {
+  #header-cart {
+    flex-direction: column;
+  }
+
+  #cart {
+    margin-right: 0;
+    margin-bottom: 0.5em;
+  }
+
+  #non-empty-cart-container {
+    flex-direction: column;
+  }
+
+  #cart-left, #cart-right {
+    width: 100%;
+  }
+
+  #summary-title {
+    border-top: 1px solid black;
+  }
+}
+
+@media (max-width: 465px) {
+
 }

@@ -2,31 +2,31 @@ const items = {
     products: [{
         id: 0,
         name: "Bananas",
-        price: 1.29,
+        price: 0.52,
         url: "https://static.vecteezy.com/system/resources/previews/008/848/350/original/fresh-yellow-banana-fruit-free-png.png",
     },
     {
         id: 1,
         name: "Apples",
-        price: 1.29,
+        price: 1.52,
         url: "https://www.applesfromny.com/wp-content/uploads/2020/05/20Ounce_NYAS-Apples2.png",
     },
     {
         id: 2,
         name: "Grapes",
-        price: 1.29,
+        price: 1.84,
         url: "https://binksberryhollow.com/wp-content/uploads/2021/12/purple-grape-1030x1030.png",
     },
     {
         id: 3, 
         name: "Strawberries",
-        price: 1.29,
+        price: 2.58,
         url: "https://billsberryfarm.com/wp-content/uploads/2020/08/strawberry-2.png",
     },
     {
         id: 4,
         name: "Melons",
-        price: 1.29,
+        price: 0.91,
         url: "https://magmelon.com/wp-content/uploads/2021/02/cantaloupe-slices.png",
     },
     {
@@ -38,7 +38,7 @@ const items = {
     {
         id: 6,
         name: "Blueberries",
-        price: 1.29,
+        price: 4.17,
         url: "https://billsberryfarm.com/wp-content/uploads/2020/08/blueberry-2.png",
     },
     {
@@ -50,25 +50,25 @@ const items = {
     {
         id: 8,
         name: "Oranges",
-        price: 1.29,
+        price: 1.21,
         url: "https://www.pearsonranch.com/wp-content/uploads/Cut-Whole-Oranges-Product-GY1vZ1-1.png",
     },
     {
         id: 9,
         name: "Peaches",
-        price: 1.29,
+        price: 1.72,
         url: "https://billsberryfarm.com/wp-content/uploads/2020/08/peach.png",
     },
     {
         id: 10,
         name: "Pineapples",
-        price: 1.29,
+        price: 0.57,
         url: "https://www.dole.com/-/media/project/dole/produce-images/fruit/pineapple_cut_web.png?rev=7b07a669415341b486c4d98d1d0e3fef&hash=947A67FA0B6FA57B38F0744DE9F2E29F",
     },
     {
         id: 11,
         name: "Raspberries",
-        price: 1.29,
+        price: 6.64,
         url: "https://billsberryfarm.com/wp-content/uploads/2020/08/raspberry.png",
     }]
 }
